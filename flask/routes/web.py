@@ -16,7 +16,11 @@ def index():
     # sort quantity of entries by x minutes
     start_time = today_at_8
     end_time = tools.increment_time_by_minutes(start_time, 60)
-    while start_time < tools.get_paris_datetime():
+    while start_time < tools.get_paris_datetime(60): # 60 minutes from now
+        start_time_string = tools.get_string_from_datetime(start_time)
+        end_time_string = tools.get_string_from_datetime(end_time)
+        start_time = tools.get_datetime_from_string(start_time_string)
+        end_time = tools.get_datetime_from_string(end_time_string)
         entry_count_by_timelapse_list.append(
             {
                 "start_time": start_time.strftime("%H:%M:%S"),
