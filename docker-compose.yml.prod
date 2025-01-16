@@ -1,0 +1,29 @@
+services:
+    webcam_flask:
+        build: ./flask
+        env_file:
+            - .env
+        environment:
+            - redis_url=redis://webcam_redis:6379  # override .env
+        container_name: webcam_flask
+        restart: always
+        expose:
+            - 8080
+        mem_limit: 536870912
+
+    webcam_nginx:
+        build: ./nginx
+        container_name: webcam_nginx
+        restart: always
+        ports:
+            - "80:80"
+        depends_on:
+            - webcam_flask
+        mem_limit: 536870912
+
+    webcam_redis:
+        image: redis
+        # disable persistence since redis is only used for caching
+        command: redis-server --save "" --appendonly no
+        restart: always
+        mem_limit: 1073741824

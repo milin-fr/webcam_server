@@ -1,0 +1,15 @@
+flask/virtual_env
+flask/__pycache__
+flask/local.py
+.env
+flask/setup.cfg
+flask/test_app.py
+flask/*/__pycache__
+nginx/fullchain.pem
+nginx/privkey.pem
+nginx/nginx.conf
+docker-compose.yml
+flask/start_scripts.sh
+.DS_Store
+.png
+flask/instance/people_counter_database.db

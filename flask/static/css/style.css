@@ -1,0 +1,754 @@
+body
+{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #ffffff;
+}
+
+*, ::after, ::before
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus-visible
+{
+  outline-style: solid;
+  outline-width: 3px;
+  outline-color: #8f2e8f;
+  outline-offset: 1px;
+  border-color: transparent;
+}
+
+.btn--previous-image:focus,
+.btn--next-image:focus
+{
+  background-color: white;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6
+{
+  margin: 0;
+}
+
+.h1{font-size: 1.5rem;}
+.h2{font-size: 1.375rem;}
+.h3{font-size: 1.250rem;}
+.h4{font-size: 1.125rem;}
+.h5{font-size: 1rem;}
+.h6{font-size: 0.875rem;}
+
+li
+{
+  list-style: none;
+  list-style-position: inside;
+  margin:0;
+  padding:0;
+}
+
+ol,
+ul
+{
+  padding: 0;
+  margin: 0;
+}
+
+a
+{
+  text-decoration: none;
+  color: black;
+}
+
+.noscroll
+{
+  overflow: hidden;
+}
+
+.float-start
+{
+  float:left;
+}
+
+.float-end
+{
+  float:right;
+}
+
+.background-color--dealicash-violet /*Dark Magenta*/
+{
+  background-color: #8f2e8f!important;
+}
+
+.background-color--dealicash-green /*Yellow Green*/
+{
+  background-color: #86cb3a!important;
+}
+
+.background-color--white
+{
+  background-color: white!important;
+}
+
+.background-color--dark
+{
+  background-color: #212529!important;
+}
+
+.background-color--transparent
+{
+  background-color: transparent!important;
+}
+
+.background-color--lightblue
+{
+  background-color: lightblue!important;
+}
+
+.background-color--red
+{
+  background-color: red!important;
+}
+
+.background-color--green
+{
+  background-color: green!important;
+}
+
+.background-color--blue
+{
+  background-color: #007bff!important;
+}
+
+.background-color--light-red
+{
+  background-color: #ecbfc3!important;
+}
+
+.background-color--light-green
+{
+  background-color: #96dbbc!important;
+}
+
+.color--dealicash-violet
+{
+  color: #8f2e8f!important;
+}
+
+.color--dealicash-green
+{
+  color: #86cb3a!important;
+}
+
+.color--white
+{
+  color: white!important;
+}
+
+.color--red
+{
+  color: red!important;
+}
+
+.color--green
+{
+  color: green!important;
+}
+
+.color--grey
+{
+  color: #6c757d!important;
+}
+
+.color--black
+{
+  color: black!important;
+}
+
+.color--lightblue
+{
+  color: lightblue!important;
+}
+
+.color--blue
+{
+  color: #007bff!important;
+}
+
+.line-break--anywhere
+{
+  line-break: anywhere;
+}
+
+.text-uppercase
+{
+  text-transform: uppercase;
+}
+
+.text-center
+{
+  text-align: center;
+  display: block;
+}
+
+.text-underline
+{
+  border-bottom: 1px solid currentColor;
+}
+
+.text-bold
+{
+  font-weight: 700;
+}
+
+.text-boldest
+{
+  font-weight: 900;
+}
+
+.opacity-5
+{
+  opacity: 0.05;
+}
+
+.opacity-10
+{
+  opacity: 0.10;
+}
+
+.opacity-15
+{
+  opacity: 0.15;
+}
+
+.opacity-25
+{
+  opacity: 0.25;
+}
+
+.opacity-50
+{
+  opacity: 0.5;
+}
+
+.opacity-75
+{
+  opacity: 0.75;
+}
+
+.width-5
+{
+  width: 5%;
+}
+
+.width-25
+{
+  width: 25%;
+}
+
+.width-40
+{
+  width: 40%;
+}
+
+.width-50
+{
+  width: 50%;
+}
+
+.width-75
+{
+  width: 75%;
+}
+
+.width-90
+{
+  width: 90%;
+}
+
+.width-100
+{
+  width: 100%;
+}
+
+.p-0,
+.pt-0,
+.py-0
+{
+  padding-top: 0;
+}
+
+
+.p-1,
+.pt-1,
+.py-1
+{
+  padding-top: 0.5rem;
+}
+
+.p-2,
+.pt-2,
+.py-2
+{
+  padding-top: 1rem;
+}
+
+.p-3,
+.pt-3,
+.py-3
+{
+  padding-top: 1.5rem;
+}
+
+.p-4,
+.pt-4,
+.py-4
+{
+  padding-top: 2rem;
+}
+
+.p-5,
+.pt-5,
+.py-5
+{
+  padding-top: 2.5rem;
+}
+
+.p-0,
+.pr-0,
+.px-0
+{
+  padding-right: 0;
+}
+
+.p-1,
+.pr-1,
+.px-1
+{
+  padding-right: 0.5rem;
+}
+
+.p-2,
+.pr-2,
+.px-2
+{
+  padding-right: 1rem;
+}
+
+.p-3,
+.pr-3,
+.px-3
+{
+  padding-right: 1.5rem;
+}
+
+.p-4,
+.pr-4,
+.px-4
+{
+  padding-right: 2rem;
+}
+
+.p-5,
+.pr-5,
+.px-5
+{
+  padding-right: 2.5rem;
+}
+
+.p-0,
+.pb-0,
+.py-0
+{
+  padding-bottom: 0;
+}
+
+.p-1,
+.pb-1,
+.py-1
+{
+  padding-bottom: 0.5rem;
+}
+
+.p-2,
+.pb-2,
+.py-2
+{
+  padding-bottom: 1rem;
+}
+
+.p-3,
+.pb-3,
+.py-3
+{
+  padding-bottom: 1.5rem;
+}
+
+.p-4,
+.pb-4,
+.py-4
+{
+  padding-bottom: 2rem;
+}
+
+.p-5,
+.pb-5,
+.py-5
+{
+  padding-bottom: 2.5rem;
+}
+
+.p-0,
+.pl-0,
+.px-0
+{
+  padding-left: 0;
+}
+
+.p-1,
+.pl-1,
+.px-1
+{
+  padding-left: 0.5rem;
+}
+
+.p-2,
+.pl-2,
+.px-2
+{
+  padding-left: 1rem;
+}
+
+.p-3,
+.pl-3,
+.px-3
+{
+  padding-left: 1.5rem;
+}
+
+.p-4,
+.pl-4,
+.px-4
+{
+  padding-left: 2rem;
+}
+
+.p-5,
+.pl-5,
+.px-5
+{
+  padding-left: 2.5rem;
+}
+
+.m-1,
+.mt-1,
+.my-1
+{
+  margin-top: 0.5rem;
+}
+
+.m-2,
+.mt-2,
+.my-2
+{
+  margin-top: 1rem;
+}
+
+.m-3,
+.mt-3,
+.my-3
+{
+  margin-top: 1.5rem;
+}
+
+.m-4,
+.mt-4,
+.my-4
+{
+  margin-top: 2rem;
+}
+
+.m-5,
+.mt-5,
+.my-5
+{
+  margin-top: 2.5rem;
+}
+
+.m-1,
+.mr-1,
+.mx-1
+{
+  margin-right: 0.5rem;
+}
+
+.m-2,
+.mr-2,
+.mx-2
+{
+  margin-right: 1rem;
+}
+
+.m-3,
+.mr-3,
+.mx-3
+{
+  margin-right: 1.5rem;
+}
+
+.m-4,
+.mr-4,
+.mx-4
+{
+  margin-right: 2rem;
+}
+
+.m-5,
+.mr-5,
+.mx-5
+{
+  margin-right: 2.5rem;
+}
+
+.m-1,
+.mb-1,
+.my-1
+{
+  margin-bottom: 0.5rem;
+}
+
+.m-2,
+.mb-2,
+.my-2
+{
+  margin-bottom: 1rem;
+}
+
+.m-3,
+.mb-3,
+.my-3
+{
+  margin-bottom: 1.5rem;
+}
+
+.m-4,
+.mb-4,
+.my-4
+{
+  margin-bottom: 2rem;
+}
+
+.m-5,
+.mb-5,
+.my-5
+{
+  margin-bottom: 2.5rem;
+}
+
+.m-1,
+.ml-1,
+.mx-1
+{
+  margin-left: 0.5rem;
+}
+
+.m-2,
+.ml-2,
+.mx-2
+{
+  margin-left: 1rem;
+}
+
+.m-3,
+.ml-3,
+.mx-3
+{
+  margin-left: 1.5rem;
+}
+
+.m-4,
+.ml-4,
+.mx-4
+{
+  margin-left: 2rem;
+}
+
+.m-5,
+.ml-5,
+.mx-5
+{
+  margin-left: 2.5rem;
+}
+
+.hidden
+{
+  display: none!important;
+}
+
+.visibility-hidden
+{
+  visibility: hidden!important;
+}
+
+
+.border--none
+{
+  border: none!important;
+}
+
+.border
+{
+  border: 1px solid #dee2e6!important;
+}
+
+.border--rounded
+{
+  border-radius: 0.25rem;
+}
+
+.border--rounded--top
+{
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.border--rounded--bottom
+{
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+
+.overflow-shadow--top
+{
+  position: fixed;
+  height: 30px;
+  background-image: linear-gradient(180deg, #86cb3a, transparent);
+}
+
+.overflow-shadow--bottom
+{
+  position: fixed;
+  height: 30px;
+  background-image: linear-gradient(0deg, #86cb3a, transparent);
+}
+
+.shadow-custom
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.shadow-bottom-black
+{
+  box-shadow: 0 1rem 1rem -1rem black;
+
+}
+
+.shadow-top-black
+{
+  box-shadow: 0 -1rem 1rem -1rem black;
+
+}
+
+.z-index-1
+{
+  z-index: 1;
+}
+
+.z-index-2
+{
+  z-index: 2;
+}
+
+.z-index-3
+{
+  z-index: 3;
+}
+
+.z-index-4
+{
+  z-index: 4;
+}
+
+.z-index-5
+{
+  z-index: 5;
+}
+
+.card--green-glass
+{
+  position: relative;
+  background-color: rgba(134, 203, 58, 0.30);
+  color: black;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(134, 203, 58, 0.15);
+}
+
+.card--violet-glass
+{
+  position: relative;
+  background: rgba(143, 46, 143, 0.05);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(143, 46, 143, 0.15);
+}
+
+.card--white-glass
+{
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.card--grey-glass
+{
+  position: relative;
+  background: rgba(0, 0, 0, 0.10);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.card--yellow-glass
+{
+  position: relative;
+  background: rgba(255, 255, 0, 0.10);
+  color: black;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-size: 0.75rem;
+}
+
+.card--red-glass
+{
+  position: relative;
+  background: rgba(255, 0, 0, 0.10);
+  color: black;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-size: 0.75rem;
+}
